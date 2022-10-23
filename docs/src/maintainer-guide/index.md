@@ -4,7 +4,7 @@ layout: doc
 eleventyNavigation:
     key: maintainer guide 
     title: Maintainer Guide 
-    order: 3
+    order: 4
 
 ---
 

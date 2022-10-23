@@ -198,12 +198,12 @@ var util = {
 };
 
 (function(w, doc, undefined) {
-    var CollapsibleIndexOptions = {
-        allCollapsed: false,
-        icon: '<svg class="index-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>',
-    };
+    // var CollapsibleIndexOptions = {
+    //     allCollapsed: false,
+    //     // icon: '<svg class="index-icon" width="12" height="8" aria-hidden="true" focusable="false" viewBox="0 0 12 8"><g fill="none"><path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z"/><path d="M-6-8h24v24h-24z"/></g></svg>',
+    // };
     var CollapsibleIndex = function(inst, options) {
-        var _options = Object.assign(CollapsibleIndexOptions, options);
+        // var _options = Object.assign(CollapsibleIndexOptions, options);
         var el = inst;
         var indexToggles = el.querySelectorAll(".docs-index .docs__index__panel > ul > .docs-index__item[data-has-children] > a"); // only top-most level
         var indexPanels = el.querySelectorAll(".docs-index .docs__index__panel > ul > .docs-index__item>[data-child-list]"); // the list
@@ -223,13 +223,13 @@ var util = {
 
                 $this.setAttribute('role', 'button');
                 $this.setAttribute("id", accID + "__item-" + index);
-                $this.innerHTML += _options.icon;
+                // $this.innerHTML += _options.icon;
 
                 if (_options.allCollapsed) $this.setAttribute("aria-expanded", "false");
                 else $this.setAttribute("aria-expanded", "true");
 
                 $this.addEventListener("click", function(e) {
-                    e.preventDefault();
+                    // e.preventDefault();
                     togglePanel($this);
                 });
             });

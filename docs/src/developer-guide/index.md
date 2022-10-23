@@ -4,7 +4,7 @@ layout: doc
 eleventyNavigation:
     key: developer guide 
     title: Developer Guide 
-    order: 2
+    order: 3
 
 ---
 

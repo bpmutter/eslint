@@ -2,6 +2,10 @@
 title: Documentation
 layout: doc
 permalink: /index.html
+eleventyNavigation:
+  key: overview
+  title: Overview
+  order: 1
 ---
 
 Welcome to our documentation pages! What would you like to view?
